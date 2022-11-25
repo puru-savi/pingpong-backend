@@ -36,7 +36,7 @@ Below users are already registerd and saved into database on application startup
 **How to Run the project**
 
 1. Right click on PingpongApplication.java file and run it as java application.
-2. Import collection of APIs in your Postman.
+2. Copy UN-TEST.postman_collection.json file from resource folder of the project and import the collection into your Postman.
 3. Call the login API with any of the above user credentials.
 
 **Request:**
