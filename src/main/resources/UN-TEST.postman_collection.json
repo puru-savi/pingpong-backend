@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "f74e27e7-5e9a-41cf-8e3f-f80625ece67b",
+		"name": "UN TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21077265"
+	},
+	"item": [
+		{
+			"name": "highestScoree",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyIiwidXNlck5hbWUiOiJBZGRpIiwiaWF0IjoxNjY5MDE3OTQyLCJzdWIiOiJVc2VyIiwiaXNzIjoiQWRkaSJ9.ScXefeEk1olRz7xiXzGoohiXqhCPSZWUj8k_7eSD890",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/highscore",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"highscore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "b305456b-45e4-4493-b36a-2deddb3b525d",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"Addi\",\n    \"password\": \"Addi123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "ping, ping pong, smash, pong, test, ping    pong, smash, pong, test, ping    pong",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ppmatch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwidXNlck5hbWUiOiJQdXJ1IiwiaWF0IjoxNjY5MTAxMjI1LCJzdWIiOiJVc2VyIiwiaXNzIjoiUHVydSJ9.xL4e-g2ZNI2YWjItFU6xoZvQyTETMsXB3LwaNmDEPlA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/ppmatch?input=ping,ping,PING PONG",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"ppmatch"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "ping,ping,PING PONG"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shutdown",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyIiwidXNlck5hbWUiOiJBZGRpIiwiaWF0IjoxNjY5MDE3OTQyLCJzdWIiOiJVc2VyIiwiaXNzIjoiQWRkaSJ9.ScXefeEk1olRz7xiXzGoohiXqhCPSZWUj8k_7eSD890",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/shutdown",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"shutdown"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyIiwidXNlck5hbWUiOiJBZGRpIiwiaWF0IjoxNjY5MDE3OTQyLCJzdWIiOiJVc2VyIiwiaXNzIjoiQWRkaSJ9.ScXefeEk1olRz7xiXzGoohiXqhCPSZWUj8k_7eSD890",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/health",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
