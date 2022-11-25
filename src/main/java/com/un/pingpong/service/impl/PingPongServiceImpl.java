@@ -41,7 +41,8 @@ public class PingPongServiceImpl implements PingPongService {
         int smashCount = 0;
         for (String input : inputList) {
             ResultData data = new ResultData();
-            if (input.toUpperCase().startsWith("PING") && input.contains(" ") && input.toUpperCase().endsWith("PONG")) {
+            if (input.toUpperCase().startsWith("PING") && input.contains(" ") && 
+                input.toUpperCase().endsWith("PONG")) {
                 data.setInput(input);
                 data.setOutput("Smash");
                 smashCount++;
@@ -51,9 +52,9 @@ public class PingPongServiceImpl implements PingPongService {
             } else if (input.equalsIgnoreCase("pong")) {
                 data.setInput(input);
                 data.setOutput("ping");
-            } else if (input.equalsIgnoreCase("smash")) {
+            } else if (input.equals("SMASH")) {
                 data.setInput(input);
-                data.setOutput("");
+                data.setOutput(" ");
             } else {
                 data.setInput(input);
                 data.setOutput("Bad");

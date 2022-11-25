@@ -40,15 +40,15 @@ public class UserServiceImpl implements UserService {
         List<User> users= new ArrayList<>();
         User user1 = new User();
         user1.setUserName("Puru");
-        user1.setPassword("Puru123");
+        user1.setPassword("puru123");
         users.add(user1);
         User user2 = new User();
         user2.setUserName("Addi");
-        user2.setPassword("Addi123");
+        user2.setPassword("addi123");
         users.add(user2);
         User user3 = new User();
         user3.setUserName("Archu");
-        user3.setPassword("Archu123");
+        user3.setPassword("archu123");
         users.add(user3);
         userRepository.saveAll(users);
         log.info("users created successfully!");
